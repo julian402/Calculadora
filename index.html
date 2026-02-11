@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="input" readonly placeholder="0" autocomplete="off" tabindex="0">
+        <div class="keys">
+            <button type="button" onclick="squareRoot()" class="func" data-key="s">√</button>
+            <button type="button" onclick="square()" class="func" data-key="q">x²</button>
+            <button type="button" onclick="clearAll()" class="clear" data-key="Escape">C</button>
+            <button type="button" onclick="deleteUnit()" data-key="Backspace">DEL</button>
+
+            <button type="button" onclick="add('7')" data-key="7">7</button>
+            <button type="button" onclick="add('8')" data-key="8">8</button>
+            <button type="button" onclick="add('9')" data-key="9">9</button>
+            <button type="button" onclick="add('/')" class="operator" data-key="/">/</button>
+
+            <button type="button" onclick="add('4')" data-key="4">4</button>
+            <button type="button" onclick="add('5')" data-key="5">5</button>
+            <button type="button" onclick="add('6')" data-key="6">6</button>
+            <button type="button" onclick="add('*')" class="operator" data-key="*">*</button>
+
+            <button type="button" onclick="add('1')" data-key="1">1</button>
+            <button type="button" onclick="add('2')" data-key="2">2</button>
+            <button type="button" onclick="add('3')" data-key="3">3</button>
+            <button type="button" onclick="add('-')" class="operator" data-key="-">-</button>
+
+            <button type="button" onclick="add('0')" class="zero" data-key="0">0</button>
+            <button type="button" onclick="add('.')" data-key=".">.</button>
+            <button type="button" onclick="calculate()" class="equal" data-key="Enter">=</button>
+            <button type="button" onclick="add('+')" class="operator" data-key="+">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
